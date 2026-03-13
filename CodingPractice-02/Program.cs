@@ -107,3 +107,15 @@ names = new List<string> { "Kim", "Lee", "Parkl" };
 count1 = names?.Count ?? 0;
 Console.WriteLine($"이름 수: {count1}");
 
+//3-3.
+string playerName1 = null;
+int? playerLevel = null;
+List<string> inventory = null;
+
+string displayName = playerName1 ?? "Unknown";
+int level = playerLevel ?? 1;
+int itemcount = inventory?.Count ?? 0;
+
+Console.WriteLine($"플레이어: {displayName}");
+Console.WriteLine($"레벨: {level}");
+Console.WriteLine($"인벤토리 아이템: {itemcount}개");
